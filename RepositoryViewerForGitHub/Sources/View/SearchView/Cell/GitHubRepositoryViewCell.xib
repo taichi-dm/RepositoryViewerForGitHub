@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="94" id="KGk-i7-Jjw" customClass="GitHubRepositoryViewCell" customModule="RepositoryViewerForGitHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-TI-ef4">
+                        <rect key="frame" x="48" y="16" width="256" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMQ-Yj-mEy">
+                        <rect key="frame" x="48" y="44.5" width="256" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.closed" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a3k-j8-Bb1">
+                        <rect key="frame" x="12" y="16" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="kcw-XH-0jQ"/>
+                            <constraint firstAttribute="height" constant="24" id="rbX-V5-7FJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vMX-9I-1W9" userLabel="stargazer">
+                        <rect key="frame" x="48" y="68" width="16" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="Rnq-Bj-QjW"/>
+                            <constraint firstAttribute="height" constant="16" id="dQT-eK-bal"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw2-7N-b9g" userLabel="Stargazer Label">
+                        <rect key="frame" x="68" y="71.5" width="236" height="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a3k-j8-Bb1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="1wz-R7-u7g"/>
+                    <constraint firstItem="b4h-TI-ef4" firstAttribute="leading" secondItem="a3k-j8-Bb1" secondAttribute="trailing" constant="12" id="2kE-Ct-C5K"/>
+                    <constraint firstAttribute="trailing" secondItem="eMQ-Yj-mEy" secondAttribute="trailing" constant="16" id="5ab-nB-Avw"/>
+                    <constraint firstItem="Nw2-7N-b9g" firstAttribute="top" secondItem="eMQ-Yj-mEy" secondAttribute="bottom" constant="10" id="9bC-2h-dIg"/>
+                    <constraint firstAttribute="trailing" secondItem="Nw2-7N-b9g" secondAttribute="trailing" constant="16" id="EaT-YC-TH3"/>
+                    <constraint firstAttribute="trailing" secondItem="b4h-TI-ef4" secondAttribute="trailing" constant="16" id="Eda-A7-xFr"/>
+                    <constraint firstItem="vMX-9I-1W9" firstAttribute="top" secondItem="eMQ-Yj-mEy" secondAttribute="bottom" constant="8" id="FFg-bU-uVS"/>
+                    <constraint firstItem="eMQ-Yj-mEy" firstAttribute="top" secondItem="b4h-TI-ef4" secondAttribute="bottom" constant="8" id="Pm0-yV-05p"/>
+                    <constraint firstAttribute="bottom" secondItem="Nw2-7N-b9g" secondAttribute="bottom" constant="8.5" id="S8Z-aX-HJb"/>
+                    <constraint firstItem="vMX-9I-1W9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="dMQ-Jf-GBB"/>
+                    <constraint firstItem="eMQ-Yj-mEy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="e3i-j8-QSA"/>
+                    <constraint firstItem="Nw2-7N-b9g" firstAttribute="leading" secondItem="vMX-9I-1W9" secondAttribute="trailing" constant="4" id="kEj-W6-EKE"/>
+                    <constraint firstItem="a3k-j8-Bb1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qxd-kQ-hJp"/>
+                    <constraint firstItem="b4h-TI-ef4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="wvo-OD-xca"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="eMQ-Yj-mEy" id="hU9-Z0-aBh"/>
+                <outlet property="repositoryIcon" destination="a3k-j8-Bb1" id="joA-c1-kx3"/>
+                <outlet property="stargazerCountLabel" destination="Nw2-7N-b9g" id="UcA-zK-UAU"/>
+                <outlet property="stargazerImage" destination="vMX-9I-1W9" id="Wge-qh-SEI"/>
+                <outlet property="titleLabel" destination="b4h-TI-ef4" id="GHc-dy-yeT"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="165.40178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
